@@ -7,8 +7,8 @@
     <ProjectGuid>{4898F998-12DA-46C9-A013-CF5F5EA8737E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CS_NoPedestrianCollision</RootNamespace>
-    <AssemblyName>CS-NoPedestrianCollision</AssemblyName>
+    <RootNamespace>NoPedestrianCollision</RootNamespace>
+    <AssemblyName>NoPedestrianCollision</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -62,8 +62,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>mkdir "%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(SolutionName)"
-del "%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(SolutionName)\$(TargetFileName)"
-xcopy /y "$(TargetPath)" "%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(SolutionName)"</PostBuildEvent>
+    <PostBuildEvent>mkdir "C:\Source\CS-NoPedestrianCollision\FinalDLL"
+del "C:\Source\CS-NoPedestrianCollision\FinalDLL\$(TargetFileName)"
+xcopy /y "$(TargetPath)" "C:\Source\CS-NoPedestrianCollision\FinalDLL"</PostBuildEvent>
   </PropertyGroup>
 </Project>
